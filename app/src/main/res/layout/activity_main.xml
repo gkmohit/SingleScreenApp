@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.mohitkishore.www.singlescreenapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/businessImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/business_img"/>
+
+    <TextView
+        android:id="@+id/businessName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/businessImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-80dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Tim Hortans"
+        android:textSize="34sp"/>
+
+    <TextView
+        android:id="@+id/businessAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/businessName"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="123 Street Name, Canada"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/businessAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Tim Hortons Inc. is a multinational fast food restaurant based in Canada, known for its coffee and donuts. It is also Canada's largest quick service restaurant chain; as of December 31, 2016, it had a total of 4,613 restaurants in nine countries."
+        android:textSize="20sp"/>
+
+</RelativeLayout>
